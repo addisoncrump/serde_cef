@@ -1,0 +1,18 @@
+[package]
+name = "serde_cef"
+version = "0.1.0"
+authors = ["Addison Crump <me@addisoncrump.info>"]
+license = "MIT/Apache-2.0"
+description = "A Common Event Format log serialization format"
+repository = "https://github.com/VTCAKAVSMoACE/serde_cef"
+keywords = ["cef", "serde", "serialization"]
+categories = ["encoding"]
+readme = "README.md"
+edition = "2018"
+include = ["Cargo.toml", "src/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+
+[dependencies]
+serde = "1.0.81"
+serde_derive = "1.0.81"
+lazy_static = "1.2.0"
+regex = "1.1.0"
