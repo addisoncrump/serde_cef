@@ -20,7 +20,7 @@ use error::{Error, Result};
 
 lazy_static! {
     static ref CEFR: Regex = Regex::new(r"((CEF:\d+)([^=\\]+\|){0,7})(.*)").unwrap();
-    static ref HEADSPLITR: Regex = Regex::new(r"(?<!\\(?:\\\\)+)\|(?:(?!$))").unwrap();
+    static ref HEADSPLITR: Regex = Regex::new(r"(?<!\\(?:\\\\)+)\|(?:(?!$))").unwrap(); // TODO
     static ref BODYPARSER: Regex = Regex::new(r"([^=\s]+)=((?:[\\]=|[^=])+)(?:(?=\s)|$)").unwrap();
 }
 
